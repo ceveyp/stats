@@ -1,4 +1,5 @@
 /*
+Authors: Philip Cevey, Danton Nguyen
 This program takes a series of integers from the command line, then calculates
 the average, minimum and maximum of the numbers, using 3 worker threads. 
 */
@@ -60,7 +61,7 @@ int main(int argc, char ** argv)
 	}
 	for(i = 0; i < 3; ++i){ //wait until all threads are finished executing
 		if(pthread_join(threads[i], NULL) != 0){
-			perror("Error joining thread");
+			perror("Error joining thread"); 
 			return 1;
 		}
 	}
