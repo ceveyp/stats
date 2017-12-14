@@ -1,5 +1,6 @@
 /*
 Authors: Philip Cevey, Danton Nguyen
+Assignment 342
 This program takes a series of integers from the command line, then calculates
 the average, minimum and maximum of the numbers, using 3 worker threads. 
 */
